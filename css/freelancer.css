@@ -384,3 +384,31 @@ span.subhead {
   font-weight: bold;
   display: block;
 }
+
+/* IE用 */
+@media all and (-ms-high-contrast: none){
+  hr.star-light,
+  hr.star-dark {
+    max-width: 15rem;
+    margin:0 auto;
+    padding: 0;
+    border: none;
+    border-top: solid 0.25rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+/* EDGE用 */
+@supports (-ms-ime-align:auto) {
+  hr.star-light,
+  hr.star-dark {
+    max-width: 15rem;
+    margin:0 auto;
+    padding: 0;
+    border: none;
+    border-top: solid 0.25rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
